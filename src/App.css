@@ -1,0 +1,88 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.9fr 1.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Title FirstName LastName"
+    "MiddleName DateOfBirth Country"
+    "PhoneNumber EmailAddress AltEmailAddress"
+    "CountryOfIssue PassportNumber ExpiringDate"
+    "Gender Gender ."
+    "AdditionalInformation AdditionalInformation AdditionalInformation"
+    "Submit Submit Submit";
+  border-radius: 3.3rem;
+  border: 2px solid gold;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.Title {
+  grid-area: Title;
+}
+
+.FirstName {
+  grid-area: FirstName;
+}
+
+.LastName {
+  grid-area: LastName;
+}
+
+.MiddleName {
+  grid-area: MiddleName;
+}
+
+.DateOfBirth {
+  grid-area: DateOfBirth;
+}
+
+.Country {
+  grid-area: Country;
+}
+
+.PhoneNumber {
+  grid-area: PhoneNumber;
+}
+
+.EmailAddress {
+  grid-area: EmailAddress;
+}
+
+.AltEmailAddress {
+  grid-area: AltEmailAddress;
+}
+
+.CountryOfIssue {
+  grid-area: CountryOfIssue;
+}
+
+.PassportNumber {
+  grid-area: PassportNumber;
+}
+
+.ExpiringDate {
+  grid-area: ExpiringDate;
+}
+
+.Gender {
+  grid-area: Gender;
+}
+
+.AdditionalInformation {
+  grid-area: AdditionalInformation;
+}
+
+.Submit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: Submit;
+}
